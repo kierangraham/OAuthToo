@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9FB156C671F6CE53D29077 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABDE51431611CA2A9438F8BE /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		6639D5CB1B0A2A8F00C63193 /* OAuth2PasswordStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6639D5CA1B0A2A8F00C63193 /* OAuth2PasswordStrategy.swift */; };
+		666BBD221B052B0B00C6F99B /* OAuth2ClientCredentialsStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BBD211B052B0B00C6F99B /* OAuth2ClientCredentialsStrategy.swift */; };
+		666BBD241B052BAD00C6F99B /* OAuth2Strategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BBD231B052BAD00C6F99B /* OAuth2Strategy.swift */; };
+		666BBD261B0532CE00C6F99B /* OAuth2AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666BBD251B0532CE00C6F99B /* OAuth2AccessToken.swift */; };
+		666BBD281B05378600C6F99B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 666BBD271B05378600C6F99B /* Podfile */; };
 		66CAE1211B04E24C001A0886 /* OAuthToo.h in Headers */ = {isa = PBXBuildFile; fileRef = 66CAE1201B04E24C001A0886 /* OAuthToo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		66CAE1271B04E24C001A0886 /* OAuthToo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66CAE11B1B04E24C001A0886 /* OAuthToo.framework */; };
-		66CAE12E1B04E24C001A0886 /* OAuthTooTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAE12D1B04E24C001A0886 /* OAuthTooTests.swift */; };
+		66CAE12E1B04E24C001A0886 /* OAuthTooClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAE12D1B04E24C001A0886 /* OAuthTooClient.swift */; };
+		66CAE13B1B04E5FB001A0886 /* OAuth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CAE13A1B04E5FB001A0886 /* OAuth2Client.swift */; };
+		66CAE13D1B04E960001A0886 /* OAuthToo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 66CAE13C1B04E960001A0886 /* OAuthToo.podspec */; };
+		7494DB18D36D6F469A86C25C /* Pods_OAuthTooTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F21C64E6B186A3065861FF2D /* Pods_OAuthTooTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +32,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CF4886342026998901F6355 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6639D5CA1B0A2A8F00C63193 /* OAuth2PasswordStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2PasswordStrategy.swift; sourceTree = "<group>"; };
+		666BBD211B052B0B00C6F99B /* OAuth2ClientCredentialsStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2ClientCredentialsStrategy.swift; sourceTree = "<group>"; };
+		666BBD231B052BAD00C6F99B /* OAuth2Strategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Strategy.swift; sourceTree = "<group>"; };
+		666BBD251B0532CE00C6F99B /* OAuth2AccessToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2AccessToken.swift; sourceTree = "<group>"; };
+		666BBD271B05378600C6F99B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		66CAE11B1B04E24C001A0886 /* OAuthToo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthToo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CAE11F1B04E24C001A0886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66CAE1201B04E24C001A0886 /* OAuthToo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthToo.h; sourceTree = "<group>"; };
 		66CAE1261B04E24C001A0886 /* OAuthTooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuthTooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CAE12C1B04E24C001A0886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		66CAE12D1B04E24C001A0886 /* OAuthTooTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTooTests.swift; sourceTree = "<group>"; };
+		66CAE12D1B04E24C001A0886 /* OAuthTooClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthTooClient.swift; sourceTree = "<group>"; };
+		66CAE1371B04E40E001A0886 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		66CAE1391B04E41E001A0886 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		66CAE13A1B04E5FB001A0886 /* OAuth2Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2Client.swift; sourceTree = "<group>"; };
+		66CAE13C1B04E960001A0886 /* OAuthToo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OAuthToo.podspec; sourceTree = "<group>"; };
+		ABDE51431611CA2A9438F8BE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7EAF639AA1652B58D019267 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B8EFA60318684A611ED4E072 /* Pods-OAuthTooTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthTooTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthTooTests/Pods-OAuthTooTests.release.xcconfig"; sourceTree = "<group>"; };
+		F21C64E6B186A3065861FF2D /* Pods_OAuthTooTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthTooTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6BADEF75B5EBD5B295AA743 /* Pods-OAuthTooTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthTooTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthTooTests/Pods-OAuthTooTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9FB156C671F6CE53D29077 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,18 +69,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				66CAE1271B04E24C001A0886 /* OAuthToo.framework in Frameworks */,
+				7494DB18D36D6F469A86C25C /* Pods_OAuthTooTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DD88EDA070E70CFB57F578F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F21C64E6B186A3065861FF2D /* Pods_OAuthTooTests.framework */,
+				ABDE51431611CA2A9438F8BE /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BED3C56C2605FB564AD48B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F6BADEF75B5EBD5B295AA743 /* Pods-OAuthTooTests.debug.xcconfig */,
+				B8EFA60318684A611ED4E072 /* Pods-OAuthTooTests.release.xcconfig */,
+				5CF4886342026998901F6355 /* Pods.debug.xcconfig */,
+				B7EAF639AA1652B58D019267 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		66CAE1111B04E24C001A0886 = {
 			isa = PBXGroup;
 			children = (
-				66CAE11D1B04E24C001A0886 /* OAuthToo */,
-				66CAE12A1B04E24C001A0886 /* OAuthTooTests */,
+				666BBD271B05378600C6F99B /* Podfile */,
+				66CAE11D1B04E24C001A0886 /* Source */,
+				66CAE12A1B04E24C001A0886 /* Tests */,
 				66CAE11C1B04E24C001A0886 /* Products */,
+				66CAE13C1B04E960001A0886 /* OAuthToo.podspec */,
+				66CAE1391B04E41E001A0886 /* README.md */,
+				66CAE1371B04E40E001A0886 /* LICENSE */,
+				4BED3C56C2605FB564AD48B2 /* Pods */,
+				2DD88EDA070E70CFB57F578F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,13 +120,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66CAE11D1B04E24C001A0886 /* OAuthToo */ = {
+		66CAE11D1B04E24C001A0886 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				66CAE1201B04E24C001A0886 /* OAuthToo.h */,
 				66CAE11E1B04E24C001A0886 /* Supporting Files */,
+				66CAE13A1B04E5FB001A0886 /* OAuth2Client.swift */,
+				666BBD211B052B0B00C6F99B /* OAuth2ClientCredentialsStrategy.swift */,
+				6639D5CA1B0A2A8F00C63193 /* OAuth2PasswordStrategy.swift */,
+				666BBD231B052BAD00C6F99B /* OAuth2Strategy.swift */,
+				666BBD251B0532CE00C6F99B /* OAuth2AccessToken.swift */,
 			);
-			path = OAuthToo;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		66CAE11E1B04E24C001A0886 /* Supporting Files */ = {
@@ -85,13 +142,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		66CAE12A1B04E24C001A0886 /* OAuthTooTests */ = {
+		66CAE12A1B04E24C001A0886 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				66CAE12D1B04E24C001A0886 /* OAuthTooTests.swift */,
+				66CAE12D1B04E24C001A0886 /* OAuthTooClient.swift */,
 				66CAE12B1B04E24C001A0886 /* Supporting Files */,
 			);
-			path = OAuthTooTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		66CAE12B1B04E24C001A0886 /* Supporting Files */ = {
@@ -120,10 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66CAE1311B04E24C001A0886 /* Build configuration list for PBXNativeTarget "OAuthToo" */;
 			buildPhases = (
+				D058C5E4416FBC6B7472C429 /* Check Pods Manifest.lock */,
 				66CAE1161B04E24C001A0886 /* Sources */,
 				66CAE1171B04E24C001A0886 /* Frameworks */,
 				66CAE1181B04E24C001A0886 /* Headers */,
 				66CAE1191B04E24C001A0886 /* Resources */,
+				FF647334450AFF99CD3C9D3A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66CAE1341B04E24C001A0886 /* Build configuration list for PBXNativeTarget "OAuthTooTests" */;
 			buildPhases = (
+				02C1C0AEBF5AAAD5EB8F209F /* Check Pods Manifest.lock */,
 				66CAE1221B04E24C001A0886 /* Sources */,
 				66CAE1231B04E24C001A0886 /* Frameworks */,
 				66CAE1241B04E24C001A0886 /* Resources */,
+				785A74FDF2D266FE6FD63BDB /* Embed Pods Frameworks */,
+				5FA51FCA256CBC0361C05FDF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666BBD281B05378600C6F99B /* Podfile in Resources */,
+				66CAE13D1B04E960001A0886 /* OAuthToo.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,11 +268,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02C1C0AEBF5AAAD5EB8F209F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5FA51FCA256CBC0361C05FDF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthTooTests/Pods-OAuthTooTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		785A74FDF2D266FE6FD63BDB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthTooTests/Pods-OAuthTooTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D058C5E4416FBC6B7472C429 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF647334450AFF99CD3C9D3A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66CAE1161B04E24C001A0886 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				666BBD261B0532CE00C6F99B /* OAuth2AccessToken.swift in Sources */,
+				66CAE13B1B04E5FB001A0886 /* OAuth2Client.swift in Sources */,
+				666BBD241B052BAD00C6F99B /* OAuth2Strategy.swift in Sources */,
+				6639D5CB1B0A2A8F00C63193 /* OAuth2PasswordStrategy.swift in Sources */,
+				666BBD221B052B0B00C6F99B /* OAuth2ClientCredentialsStrategy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66CAE12E1B04E24C001A0886 /* OAuthTooTests.swift in Sources */,
+				66CAE12E1B04E24C001A0886 /* OAuthTooClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -310,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,28 +469,35 @@
 		};
 		66CAE1321B04E24C001A0886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF4886342026998901F6355 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OAuthToo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		66CAE1331B04E24C001A0886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7EAF639AA1652B58D019267 /* Pods.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OAuthToo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -352,6 +506,7 @@
 		};
 		66CAE1351B04E24C001A0886 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6BADEF75B5EBD5B295AA743 /* Pods-OAuthTooTests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -361,7 +516,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = OAuthTooTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -369,12 +524,13 @@
 		};
 		66CAE1361B04E24C001A0886 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8EFA60318684A611ED4E072 /* Pods-OAuthTooTests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = OAuthTooTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -399,6 +555,7 @@
 				66CAE1331B04E24C001A0886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66CAE1341B04E24C001A0886 /* Build configuration list for PBXNativeTarget "OAuthTooTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +564,7 @@
 				66CAE1361B04E24C001A0886 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

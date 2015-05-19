@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Kieran Graham. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import Foundation;
 
 //! Project version number for OAuthToo.
 FOUNDATION_EXPORT double OAuthTooVersionNumber;

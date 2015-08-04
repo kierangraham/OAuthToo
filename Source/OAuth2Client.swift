@@ -57,7 +57,7 @@ public class OAuth2Client {
   public lazy var authorizationHeaderValue: String = {
     let base64 = (self.clientID + ":" + self.clientSecret)
       .dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
-      .base64EncodedStringWithOptions(NSDataBase64EncodingOptions.allZeros)
+      .base64EncodedStringWithOptions(NSDataBase64EncodingOptions())
 
     return "Basic \(base64)"
   }()

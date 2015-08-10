@@ -28,6 +28,14 @@ public class OAuth2Client {
   public let clientID: String
   public let clientSecret: String
 
+  private lazy var sessionConfiguration: NSURLSessionConfiguration = {
+    return NSURLSessionConfiguration.defaultSessionConfiguration()
+  }()
+
+  private lazy var manager:Manager = {
+    return Alamofire.Manager(configuration: self.sessionConfiguration)
+  }()
+
   public lazy var clientCredentials: OAuth2ClientCredentialsStrategy = {
     return OAuth2ClientCredentialsStrategy(client: self)
   }()
@@ -63,29 +71,26 @@ public class OAuth2Client {
   }()
 
   public func tokenRequest(params: OAuth2Options, callback: OAuth2AccessTokenCallback) {
-    let sessionConfiguration = NSURLSessionConfiguration.defaultSessionConfiguration()
     sessionConfiguration.HTTPAdditionalHeaders = [
       "Authorization": authorizationHeaderValue
     ]
 
-    let manager = Alamofire.Manager(configuration: sessionConfiguration)
     let url = options[OAuth2HostURL]! + options[OAuth2TokenURL]!
 
     manager.request(.POST, url, parameters: params, encoding: ParameterEncoding.URL)
-      .responseJSON(options: .allZeros) {
-        (urlRequest, urlResponse, response, error) -> Void in
+      .responseJSON(options: .AllowFragments) {
+        (urlRequest, urlResponse, result) -> Void in
 
-        if let status = urlResponse?.statusCode, response = response as? [String: AnyObject] where status == 200 {
-          let json = JSON(response)
-          let token = OAuth2AccessToken(json: json)
+      switch result {
+      case .Success(let response):
+        let json = JSON(response)
+        let token = OAuth2AccessToken(json: json)
 
-          callback(token: token, error: nil)
-        }
-        else if let status = urlResponse?.statusCode, response = response as? [String: String] where status == 400 || status == 401 {
-          // TODO: handle errors better
-          let error = NSError(domain: OAuth2ErrorDomain, code: -status, userInfo: response)
-          callback(token: nil, error: error)
-        }
+        callback(token: token, error: nil)
+
+      case .Failure(_, let e):
+        callback(token: nil, error: e)
+      }
     }
   }
 }

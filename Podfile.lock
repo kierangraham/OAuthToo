@@ -31,13 +31,13 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Alamofire:
-    :commit: 88ca2a248ee0142064e2c760ea9f15279c7489df
+    :commit: 1b7b1f1aa4243004369c9e741d08ff4cdb072470
     :git: git@github.com:Alamofire/Alamofire.git
   Dollar:
     :commit: 32c999da685c5d689afa9bb866765fe924518f59
     :git: git@github.com:ankurp/Dollar.swift.git
   Nimble:
-    :commit: a6b4f6553b8d8662cb8fb4f9c0624e30576d6075
+    :commit: decf8c6be4139cbbadbb15c6505628ec168662f4
     :git: git@github.com:Quick/Nimble.git
   Quick:
     :commit: 4f7480ff9560e3791096e1a58ce09b6c0a8c926c

@@ -41,7 +41,11 @@ public struct OAuth2AccessToken {
   }
 
   public func isExpired() -> Bool {
-    return !willExpire() && NSDate(timeIntervalSinceNow: 0).compare(expiresAt!) == NSComparisonResult.OrderedAscending
+    guard let expiresAt = expiresAt else {
+      return false
+    }
+
+    return willExpire() && NSDate(timeIntervalSinceNow: 0).compare(expiresAt) == .OrderedDescending
   }
 
   public func isRefreshable() -> Bool {

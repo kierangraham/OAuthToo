@@ -17,7 +17,7 @@ let  OAuth2ErrorDomain        = "OAuth2Error"
 
 public typealias OAuth2Options = [String: String]
 public typealias OAuth2ClientConfigureBlock = ((Void) -> OAuth2Options)
-public typealias OAuth2AccessTokenCallback = (token: OAuth2AccessToken?, error: NSError?) -> Void
+public typealias OAuth2AccessTokenCallback = (token: OAuth2AccessToken?, error: OAuth2Error?) -> Void
 
 public enum OAuth2GrantType {
   case Password
@@ -88,18 +88,22 @@ public class OAuth2Client {
 
         callback(token: token, error: nil)
 
-      case .Failure(_, let e):
+      case .Failure(_, let e as OAuth2Error):
         callback(token: nil, error: e)
+
+      default:
+        callback(token: nil, error: OAuth2Error.Unknown)
       }
     }
   }
 }
 
-public enum OAuth2Error {
+public enum OAuth2Error: ErrorType {
   case InvalidRequest
   case InvalidClient
   case InvalidToken
   case InvalidGrant
   case InvalidScope
   case UnsupportedGrantType
+  case Unknown
 }

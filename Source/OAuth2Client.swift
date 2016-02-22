@@ -78,6 +78,7 @@ public class OAuth2Client {
     let url = options[OAuth2HostURL]! + options[OAuth2TokenURL]!
 
     manager.request(.POST, url, parameters: params, encoding: ParameterEncoding.URL)
+      .validate()
       .responseJSON(options: .AllowFragments) {
         (urlRequest, urlResponse, result) -> Void in
 
